@@ -1,8 +1,9 @@
+
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Help Pebbles ❤️</title><style>
+<title>Help Pebbles — Give Her a Chance ❤️</title><style>
 *{box-sizing:border-box}
 
 body{
@@ -67,18 +68,6 @@ h2{
   font-weight:bold;
 }
 
-.button:hover{
-  opacity:.9;
-}
-
-.bank{
-  display:none;
-  background:#fff8f1;
-  padding:18px;
-  border-radius:12px;
-  line-height:1.8;
-}
-
 .progress{
   background:#ddd;
   border-radius:20px;
@@ -89,7 +78,7 @@ h2{
 .bar{
   background:#7b3f00;
   height:100%;
-  width:.31%;
+  width:0%;
 }
 
 .amount{
@@ -97,6 +86,14 @@ h2{
   font-size:20px;
   font-weight:bold;
   margin:12px 0;
+}
+
+.bank{
+  display:none;
+  background:#fff8f1;
+  padding:18px;
+  border-radius:12px;
+  line-height:1.8;
 }
 
 .gallery{
@@ -124,27 +121,31 @@ footer{
   .gallery{
     grid-template-columns:1fr;
   }
+
+  .gallery img{
+    height:250px;
+  }
 }
 </style></head><body><header>
 <h1>Help Pebbles — Give Her a Chance ❤️</h1>
 <p>Every donation and every share can make a difference.</p>
 </header><div class="container"><div class="card hero">
-<img src="pebbles_1.jpg" alt="Pebbles">
-<h2>Help Pebbles ❤️</h2><p>
+<img src="pebbles_1.jpg" alt="Pebbles"><h2>Help Pebbles ❤️</h2><p>
 Pebbles is a special dog who needs medical care, treatment and recovery.
-We are raising funds to help give her the care she needs and a better chance
-at recovery.
+We are raising funds to help give her the care she needs and a better
+chance at recovery.
 </p>
 </div><div class="card">
 <h2>Our Fundraising Goal</h2><div class="amount">
-$<span id="raised">62</span> raised of $20,000
+$<span id="raised">0</span> raised of $20,000
 </div><div class="progress">
 <div class="bar" id="bar"></div>
-</div><p style="text-align:center" id="percent">0.31% raised</p>
+</div><p style="text-align:center" id="percent">0% raised</p>
 </div><div class="card">
 <h2>Support Pebbles ❤️</h2><a class="button"
-href="https://www.givesendgo.com/pebbles-surgery?utm_source=share"
-target="_blank">
+href="https://www.givesendgo.com/pebbles-surgery-mr5jd"
+target="_blank"
+rel="noopener">
 ❤️ Donate via GiveSendGo
 </a>
 
@@ -187,7 +188,7 @@ friends, family and animal lovers. ❤️
 <p>Every donation and every share matters.</p>
 </footer><script>
 
-let raised=62;
+let raised=0;
 let goal=20000;
 
 let percent=(raised/goal)*100;
