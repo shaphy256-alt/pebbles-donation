@@ -1,165 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Help Pebbles — Give Her a Chance</title>
-<style>
+<title>Help Pebbles ❤️</title><style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#fff8f1;color:#333}
-header{background:#7b3f00;color:white;text-align:center;padding:35px 20px}
-header h1{font-size:32px;margin:0 0 10px}
-header p{font-size:18px;margin:0}
-.container{max-width:900px;margin:auto;padding:25px 18px}
-.hero img,.gallery img{width:100%;border-radius:18px;display:block;object-fit:cover}
-.hero img{max-height:500px}
-h2{color:#7b3f00;margin-top:30px}
-.card{background:white;padding:22px;margin:20px 0;border-radius:18px;box-shadow:0 3px 12px #0001}
-.progress{background:#ddd;border-radius:20px;height:25px;overflow:hidden}
-.bar{background:#7b3f00;height:100%;width:.31%}
-.amount{text-align:center;font-size:20px;font-weight:bold;margin:12px 0}
-button{background:#7b3f00;color:white;border:0;padding:14px 22px;border-radius:10px;font-size:17px}
-.details{line-height:1.8;word-break:break-word}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gallery img{height:220px}
-footer{text-align:center;background:#7b3f00;color:white;padding:25px;margin-top:30px}
-@media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img{height:250px}}
-</style>
-</head>
 
-<body>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#fff8f1;
+  color:#333;
+}
 
-<header>
+header{
+  background:#7b3f00;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+}
+
+header h1{
+  margin:0 0 10px;
+  font-size:32px;
+}
+
+header p{
+  margin:0;
+  font-size:18px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:22px;
+  margin:20px 0;
+  border-radius:18px;
+  box-shadow:0 3px 12px #0001;
+}
+
+.hero img{
+  width:100%;
+  max-height:500px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+h2{
+  color:#7b3f00;
+}
+
+.button{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  background:#7b3f00;
+  color:white;
+  padding:16px;
+  margin:12px 0;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.button:hover{
+  opacity:.9;
+}
+
+.bank{
+  display:none;
+  background:#fff8f1;
+  padding:18px;
+  border-radius:12px;
+  line-height:1.8;
+}
+
+.progress{
+  background:#ddd;
+  border-radius:20px;
+  height:25px;
+  overflow:hidden;
+}
+
+.bar{
+  background:#7b3f00;
+  height:100%;
+  width:.31%;
+}
+
+.amount{
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+  margin:12px 0;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+footer{
+  background:#7b3f00;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:30px;
+}
+
+@media(max-width:600px){
+  .gallery{
+    grid-template-columns:1fr;
+  }
+}
+</style></head><body><header>
 <h1>Help Pebbles — Give Her a Chance ❤️</h1>
-<p>Help Pebbles Get the Care She Needs</p>
-</header>
-
-<div class="container">
-
-<div class="hero card">
+<p>Every donation and every share can make a difference.</p>
+</header><div class="container"><div class="card hero">
 <img src="pebbles_1.jpg" alt="Pebbles">
-<h2>Help Pebbles ❤️</h2>
-<p>
-Pebbles is a nice animal and needs your support. She needs medical care,
-treatment and a safe recovery. Your kindness can help give her another chance.
+<h2>Help Pebbles ❤️</h2><p>
+Pebbles is a special dog who needs medical care, treatment and recovery.
+We are raising funds to help give her the care she needs and a better chance
+at recovery.
 </p>
-</div>
-
-<div class="card">
-<h2>Our Fundraising Goal</h2>
-<div class="amount">
+</div><div class="card">
+<h2>Our Fundraising Goal</h2><div class="amount">
 $<span id="raised">62</span> raised of $20,000
-</div>
-<div class="progress">
+</div><div class="progress">
 <div class="bar" id="bar"></div>
-</div>
-<p style="text-align:center" id="percent">0.31% raised</p>
-</div>
+</div><p style="text-align:center" id="percent">0.31% raised</p>
+</div><div class="card">
+<h2>Support Pebbles ❤️</h2><a class="button"
+href="https://www.givesendgo.com/pebbles-surgery?utm_source=share"
+target="_blank">
+❤️ Donate via GiveSendGo
+</a>
 
-<div class="card">
-<h2>What Your Support Can Help With</h2>
-<ul>
-<li>Veterinary care</li>
-<li>Medication</li>
-<li>Medical examinations</li>
-<li>Surgery and treatment</li>
-<li>Recovery and care</li>
-<li>Food and basic needs</li>
-<li>Ongoing support</li>
-</ul>
-</div>
+<a class="button"
+href="javascript:void(0)"
+onclick="showBank()">
+🏦 Donate via Bank Transfer
+</a>
 
-<div class="card">
-<h2>How You Can Help</h2>
-<p>
-Every contribution, no matter the size, can make a difference for Pebbles.
-If you cannot donate, sharing this page with caring people can also help.
-</p>
-</div>
+<div class="bank" id="bankDetails"><strong>Bank Transfer Details</strong><br><br>
 
-<div class="card">
-<h2>Bank Transfer</h2>
-<div class="details">
 <b>Account holder:</b> Sharif Kasiba<br>
-<b>Account number:</b> 216438879195<br>
 <b>Bank:</b> Lead Bank<br>
-<b>Country:</b> United States<br>
-<b>ACH routing:</b> 101019644<br>
-<b>Wire routing:</b> 101019644<br>
-<b>Bank address:</b> 1801 Main St., Kansas City, MO 64108<br>
-<b>Account type:</b> Checking
-</div>
-<p><b>Please verify the bank details before sending a donation.</b></p>
-</div>
+<b>Account number:</b> 216438879195<br>
+<b>Routing number:</b> 101019644<br>
+<b>Account type:</b> Checking<br>
+<b>Country:</b> United States
 
-<div class="card">
-<h2>Sendwave</h2>
-<div class="details">
-<b>Recipient:</b> Sharif Kasiba<br>
-<b>Mobile:</b> +256 792 917 567
 </div>
-</div>
-
-<div class="card">
-<h2>Mobile Money</h2>
-<div class="details">
-<b>Name:</b> Kasiba Sharif<br>
-<b>Number:</b> +256 792 917 567
-</div>
-</div>
-
-<div class="card">
-<h2>International Transfers</h2>
-<p>
-If you are outside the country and would like to support Pebbles,
-please contact us for assistance with an international transfer.
+</div><div class="card">
+<h2>Pebbles' Story 🐾</h2><p>
+Pebbles deserves care, kindness and a chance to recover. Donations will help
+with veterinary care, medication, medical examinations, surgery and recovery.
+</p><p>
+If you cannot donate, please consider sharing Pebbles' fundraiser with
+friends, family and animal lovers. ❤️
 </p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p><b>Email:</b> shaphy256@gmail.com</p>
-<p><b>Location:</b> South Africa</p>
-</div>
-
-<div class="card">
-<h2>Pebbles' Story</h2>
-<p>
-Pebbles is a special dog who deserves care, kindness and a chance to recover.
-We are raising funds for veterinary treatment, medication, examinations,
-surgery and recovery. Updates and photos will be shared as she receives care.
-</p>
-<p>
-<strong>Please help Pebbles.</strong> Your support can give her hope and a
-better future. ❤️🐾
-</p>
-</div>
-
-<h2>Photos of Pebbles</h2>
-<div class="gallery">
-<img src="pebbles_1.jpg" alt="Pebbles">
+</div><div class="card">
+<h2>Photos of Pebbles 📸</h2><div class="gallery"><img src="pebbles_1.jpg" alt="Pebbles">
 <img src="pebbles_2.jpg" alt="Pebbles">
 <img src="pebbles_3.jpg" alt="Pebbles">
 <img src="pebbles_4.jpg" alt="Pebbles">
 <img src="pebbles_5.jpg" alt="Pebbles">
-<img src="pebbles_6.jpg" alt="Pebbles">
-</div>
-
-</div>
-
-<footer>
+<img src="pebbles_6.jpg" alt="Pebbles"></div>
+</div><div class="card">
+<h2>Contact</h2>
+<p><b>Email:</b> shaphy256@gmail.com</p>
+</div></div><footer>
 <p>Thank you for caring about Pebbles. ❤️🐾</p>
-<p>Every share and every donation matters.</p>
-</footer>
+<p>Every donation and every share matters.</p>
+</footer><script>
 
-<script>
 let raised=62;
 let goal=20000;
-let percent=(raised/goal)*100;
-document.getElementById("raised").textContent=raised.toLocaleString();
-document.getElementById("percent").textContent=percent.toFixed(2)+"% raised";
-document.getElementById("bar").style.width=percent+"%";
-</script>
 
-</body>
+let percent=(raised/goal)*100;
+
+document.getElementById("raised").textContent=
+raised.toLocaleString();
+
+document.getElementById("percent").textContent=
+percent.toFixed(2)+"% raised";
+
+document.getElementById("bar").style.width=
+percent+"%";
+
+function showBank(){
+
+let bank=document.getElementById("bankDetails");
+
+if(bank.style.display==="block"){
+bank.style.display="none";
+}else{
+bank.style.display="block";
+}
+
+}
+
+</script></body>
 </html>
